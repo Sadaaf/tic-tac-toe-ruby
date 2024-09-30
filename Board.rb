@@ -35,6 +35,7 @@ class Board
   end
 
   private
+
   def is_winner?(given_array)
     @@winning_combinations.each do |combination|
       matched = 0

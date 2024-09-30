@@ -33,6 +33,8 @@ class Game
       elsif @board.check_winner == 'O'
         @player2.increase_score
         @board.reset_board
+      elsif !@board.board.include?(nil)
+        @board.reset_board
       end
       break if @player1.is_winner? || @player2.is_winner?
     end
